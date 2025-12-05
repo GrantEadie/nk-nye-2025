@@ -64,8 +64,9 @@ export default function Home() {
           >
             <path d="M224,144c0,38.11-27.67,45.66-49.9,51.72C149.77,202.36,136,207.31,136,232a8,8,0,0,1-16,0c0-24.69-13.77-29.64-38.1-36.28C59.67,189.66,32,182.11,32,144a8,8,0,0,1,16,0c0,24.69,13.77,29.64,38.1,36.28,11.36,3.1,24.12,6.6,33.9,14.34V128H88a8,8,0,0,1,0-16h32V82.83a28,28,0,1,1,16,0V112h32a8,8,0,0,1,0,16H136v66.62c9.78-7.74,22.54-11.24,33.9-14.34C194.23,173.64,208,168.69,208,144a8,8,0,0,1,16,0Z"></path>
           </svg>
-          <p className="text-sm sm:text-base">
+          <p className="text-m sm:text-s">
             Costumes highly encouraged.{" "}
+            {/* <br className="sm:hidden"/> */}
             <span className="italic text-xs">*Absolutely no pirates</span>
           </p>
         </div>
@@ -78,16 +79,16 @@ export default function Home() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"
           }`}
         >
-          <div className="text-[50px] xs:text-[70px] sm:text-[150px] md:text-[180px] lg:text-[210px]">
+          <div className="text-[100px] xs:text-[140px] sm:text-[150px] md:text-[180px] lg:text-[210px]">
             MARITIME
           </div>
-          <div className="text-[45px] xs:text-[63px] sm:text-[135px] md:text-[162px] lg:text-[189px]">
+          <div className="text-[90px] xs:text-[126px] sm:text-[135px] md:text-[162px] lg:text-[189px]">
             MOONLIGHT
           </div>
         </h1>
 
         <h3
-          className={`text-center text-[0.6rem] xs:text-xs sm:text-xl md:text-3xl text-white transition-all duration-1000 delay-500 uppercase tracking-[0.3em] xs:tracking-[0.5em] sm:tracking-[1em] italic ${
+          className={`text-center text-sm xs:text-base sm:text-xl md:text-3xl text-white transition-all duration-1000 delay-500 uppercase tracking-[0.3em] xs:tracking-[0.5em] sm:tracking-[1em] italic ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"
           }`}
         >
@@ -96,14 +97,14 @@ export default function Home() {
 
         <div className="flex gap-4 sm:gap-10 flex-wrap justify-center">
           <h3
-            className={`text-center font-bold text-sm xs:text-base sm:text-xl md:text-2xl text-white flex items-center justify-center gap-1 sm:gap-2 transition-all duration-1000 delay-700 ${
+            className={`text-center font-bold text-xl xs:text-2xl sm:text-xl md:text-2xl text-white flex items-center justify-center gap-1 sm:gap-2 transition-all duration-1000 delay-700 ${
               isLoaded
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 -translate-y-8"
             }`}
           >
             <svg
-              className="w-3 h-3 xs:w-4 xs:h-4 sm:w-6 sm:h-6 md:w-7 md:h-7"
+              className="w-6 h-6 xs:w-8 xs:h-8 sm:w-6 sm:h-6 md:w-7 md:h-7"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -112,7 +113,7 @@ export default function Home() {
             The Nook
           </h3>
           <h3
-            className={`text-center font-bold text-sm xs:text-base sm:text-xl md:text-2xl text-white flex items-center justify-center gap-1 sm:gap-2 transition-all duration-1000 delay-700 ${
+            className={`text-center font-bold text-xl xs:text-2xl sm:text-xl md:text-2xl text-white flex items-center justify-center gap-1 sm:gap-2 transition-all duration-1000 delay-700 ${
               isLoaded
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 -translate-y-8"
@@ -120,7 +121,7 @@ export default function Home() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 xs:w-5 xs:h-5 sm:w-7 sm:h-7"
+              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-7 sm:h-7"
               fill="white"
               viewBox="0 0 256 256"
             >
@@ -132,7 +133,7 @@ export default function Home() {
 
         <a
           href="https://www.pinterest.com/arielwright/ships-in-the-night/?invite_code=0c8cb49cf2da430a9f175c1653f13fcb&sender=298715525192618351s"
-          className={`flex items-center justify-center text-center gap-2 sm:gap-4 text-sm xs:text-base sm:text-xl md:text-2xl lg:text-3xl font-extralight text-white group active:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] border border-white/20 rounded-full px-3 py-2 xs:px-4 xs:py-2 sm:px-8 sm:py-4 transition-all duration-500 bg-black/40 backdrop-blur-md hover:bg-white/20 active:bg-white/20 ${
+          className={`flex items-center justify-center text-center gap-2 sm:gap-4 text-xl xs:text-2xl sm:text-xl md:text-2xl lg:text-3xl font-extralight text-white group active:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] border border-white/20 rounded-full px-3 py-2 xs:px-4 xs:py-2 sm:px-8 sm:py-4 transition-all duration-500 bg-black/40 backdrop-blur-md hover:bg-white/20 active:bg-white/20 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -140,7 +141,7 @@ export default function Home() {
             Costume Inspo / Moodboard
           </span>
           <svg
-            className="w-3 h-3 xs:w-4 xs:h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 shrink-0"
+            className="w-6 h-6 xs:w-8 xs:h-8 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 shrink-0"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -171,11 +172,11 @@ export default function Home() {
       {/* Lineup Section */}
       <section className="flex flex-col items-center justify-center min-h-dvh gap-4 sm:gap-10 relative z-10 px-3 sm:px-6 py-10 sm:py-20">
         <div className="flex flex-col gap-4 sm:gap-10 w-full max-w-4xl text-center text-white items-center">
-          <h4 className="font-[Calora] text-2xl xs:text-3xl sm:text-5xl md:text-7xl font-light">
+          <h4 className="font-[Calora] text-4xl xs:text-6xl sm:text-5xl md:text-7xl font-light">
             LINEUP
           </h4>
 
-          <div className="flex flex-col items-center gap-6 sm:gap-8 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] w-full max-w-2xl">
+          <div className="flex flex-col items-center gap-6 sm:gap-8 text-xl xs:text-2xl sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] w-full max-w-2xl">
 
             <div className="flex justify-between w-full border-b border-white/10 pb-4">
               <span className="font-medium">9-10:00 PM</span>
@@ -215,11 +216,11 @@ export default function Home() {
       {/* Getting There Section */}
       <section className="flex flex-col items-center justify-center min-h-dvh gap-4 sm:gap-10 relative z-10 px-3 sm:px-6 py-10 sm:py-20">
         <div className="flex flex-col gap-4 sm:gap-10 w-full max-w-4xl text-center text-white items-center">
-          <h4 className="font-[Calora] text-2xl xs:text-3xl sm:text-5xl md:text-7xl font-light">
+          <h4 className="font-[Calora] text-4xl xs:text-6xl sm:text-5xl md:text-7xl font-light">
             PARKING MAP
           </h4>
 
-          <div className="flex flex-col items-center gap-4 sm:gap-10 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] px-2">
+          <div className="flex flex-col items-center gap-4 sm:gap-10 text-xl xs:text-2xl sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] px-2">
             <p className="font-medium italic">
               <span className="text-red-300 underline">No parking </span>
               <span className="underline">on the property</span>

@@ -107,6 +107,8 @@ export default function Home() {
           </svg>
         </a>
 
+        <p>Costumes highly encouraged. <span className="italic text-xs">*Absolutely no pirates</span></p>
+
         <div
           className={`absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-2000 animate-bounce ${
             isLoaded ? "opacity-100" : "opacity-0"

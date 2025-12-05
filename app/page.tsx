@@ -65,7 +65,9 @@ export default function Home() {
           </svg>
           <p className="text-xs sm:text-base leading-tight sm:leading-normal">
             Costumes highly encouraged.{" "}
-            <span className="italic text-[0.65rem] sm:text-xs">*Absolutely no pirates</span>
+            <span className="italic text-[0.65rem] sm:text-xs">
+              *Absolutely no pirates
+            </span>
           </p>
         </div>
       </div>
@@ -134,6 +136,7 @@ export default function Home() {
           className={`flex items-center justify-center text-center gap-2 sm:gap-4 text-sm xs:text-base sm:text-xl md:text-2xl lg:text-3xl font-extralight text-white group active:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] border border-white/20 rounded-full px-4 py-2 xs:px-5 xs:py-2.5 sm:px-8 sm:py-4 transition-all duration-500 bg-black/40 backdrop-blur-md hover:bg-white/20 active:bg-white/20 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
+          target="_blank"
         >
           <span className="wrap-break-word tracking-[-.12em] transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] group-active:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
             Costume Inspo / Moodboard
@@ -175,7 +178,6 @@ export default function Home() {
           </h4>
 
           <div className="flex flex-col items-center gap-4 sm:gap-8 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] w-full max-w-2xl">
-
             <div className="flex justify-between w-full border-b border-white/10 pb-3 sm:pb-4">
               <span className="font-medium">9-10:00 PM</span>
               <span className="italic">TBD</span>
@@ -220,12 +222,14 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-3 sm:gap-10 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] px-2">
             <p className="font-medium italic">
-              <span className="text-red-300 underline">No parking </span>
+              <span className="text-[#EB6323] opacity-85 underline">
+                No parking{" "}
+              </span>
               <span className="underline">on the property</span>
             </p>
             <p className="max-w-full sm:w-max p-2 px-3 xs:p-3 xs:px-4 sm:p-4 sm:px-6">
               Please park on the streets marked{" "}
-              <span className="text-green-300 italic">green</span> or at{" "}
+              <span className="text-[#00F635] opacity-70 italic">green</span> or at{" "}
               <a
                 target="_blank"
                 className="underline"

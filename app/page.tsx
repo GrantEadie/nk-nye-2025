@@ -14,13 +14,17 @@ export default function Home() {
   return (
     <div className="relative">
       {videoError ? (
-        <Image
-          src="/maritime bg small.jpg"
-          alt="Maritime background"
-          fill
-          className="fixed object-cover -z-10"
-          priority
-        />
+        <div className="fixed inset-0 -z-10">
+          <Image
+            src="/maritime bg small.jpg"
+            alt="Maritime background"
+            fill
+            className="object-cover"
+            priority
+            quality={100}
+            sizes="100vw"
+          />
+        </div>
       ) : (
         <video
           autoPlay

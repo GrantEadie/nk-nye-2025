@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Maritime Moonlight | Nook NYE 2025",
     description: "New Year's Eve at The Nook - Costumes highly encouraged",
     url: 'https://nye-nook-2025.vercel.app',
-    siteName: 'Maritime Moonlight',
+    siteName: 'Maritime Moonlight | Nook NYE 2025',
     images: [
       {
         url: '/nk nye mm twitter cover.png',

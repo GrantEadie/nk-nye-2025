@@ -16,12 +16,19 @@ export default function Home() {
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
+        poster="/nk nye background.webm"
         className={`fixed inset-0 w-full h-full object-cover -z-10 transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+        onLoadedData={(e) => {
+          const video = e.currentTarget;
+          video.play().catch(() => {
+            // Fallback if autoplay is blocked
+          });
+        }}
       >
         <source src="/nk nye background.webm" type="video/webm" />
       </video>
-      <div className="fixed inset-0 bg-black/50 -z-10"></div>
+      <div className="fixed inset-0 bg-black/70 -z-10"></div>
 
       <h1 className={`text-white text-center font-[Calora] pt-8 sm:pt-12 md:pt-16 relative z-10 leading-[0.82] px-2 transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
         <div className="text-[80px] sm:text-[150px] md:text-[180px] lg:text-[210px]">MARITIME</div>

@@ -19,6 +19,28 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
+  openGraph: {
+    title: "Maritime Moonlight | Nye Nook 2025",
+    description: "New Year's Eve at The Nook - Costumes highly encouraged",
+    url: 'https://nye-nook-2025.vercel.app',
+    siteName: 'Maritime Moonlight',
+    images: [
+      {
+        url: '/nk nye mm twitter cover.png',
+        width: 1200,
+        height: 630,
+        alt: 'Maritime Moonlight - New Year\'s Eve 2025',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Maritime Moonlight | Nye Nook 2025",
+    description: "New Year's Eve at The Nook - Costumes highly encouraged",
+    images: ['/nk nye mm twitter cover.png'],
+  },
 };
 
 export default function RootLayout({

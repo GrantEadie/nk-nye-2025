@@ -176,15 +176,16 @@ export default function Home() {
           </h4>
 
           <div className="flex flex-col items-center gap-6 sm:gap-8 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] w-full max-w-2xl">
-            <div className="flex justify-between w-full border-b border-white/20 pb-4">
+
+            <div className="flex justify-between w-full border-b border-white/10 pb-4">
               <span className="font-medium">9-10:00 PM</span>
               <span className="italic">TBD</span>
             </div>
-            <div className="flex justify-between w-full border-b border-white/20 pb-4">
+            <div className="flex justify-between w-full border-b border-white/10 pb-4">
               <span className="font-medium">10-11:00 PM</span>
               <span className="italic">DoctorWife</span>
             </div>
-            <div className="flex justify-between w-full border-b pb-4">
+            <div className="flex justify-between w-full border-b border-white/50 pb-4">
               <span className="font-medium">11-12:30 AM</span>
               <span className="italic font-bold">Bad Ginger</span>
             </div>

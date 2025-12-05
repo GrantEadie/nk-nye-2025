@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Libre_Baskerville } from "next/font/google";
+import { Lora } from "next/font/google";
 import "./globals.css";
 
-const baskerville = Libre_Baskerville({
-  weight: ["400", "700"],
+const lora = Lora({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
       </head>
-      <body className={`${baskerville.className} antialiased`}>
+      <body className={`${lora.className} antialiased`}>
         {children}
       </body>
     </html>

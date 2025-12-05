@@ -39,7 +39,7 @@ export default function Home() {
           }}
           onError={() => setVideoError(true)}
         >
-          <source src="/mm nye bg.webm" type="video/webm" />
+          <source src="/mm nye bg.mp4" type="video/webm" />
         </video>
       )}
       <div className="fixed inset-0 bg-black/70 -z-10"></div>
@@ -59,7 +59,7 @@ export default function Home() {
         </h1>
 
         <h3
-          className={`text-center text-xl sm:text-2xl md:text-3xl text-white transition-all duration-1000 delay-500 uppercase tracking-[1em] italic ${
+          className={`text-center text-sm sm:text-xl md:text-3xl text-white transition-all duration-1000 delay-500 uppercase tracking-[1em] italic ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"
           }`}
         >

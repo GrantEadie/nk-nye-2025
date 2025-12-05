@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Maritime Moonlight | Nye Nook 2025",
+    title: "Maritime Moonlight | Nook NYE 2025",
     description: "New Year's Eve at The Nook - Costumes highly encouraged",
     url: 'https://nye-nook-2025.vercel.app',
     siteName: 'Maritime Moonlight',

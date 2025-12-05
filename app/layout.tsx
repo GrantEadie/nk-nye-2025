@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Krona_One } from "next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 
-const krona = Krona_One({
-  weight: "400",
+const baskerville = Libre_Baskerville({
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
 
@@ -19,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${krona.className} antialiased`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+      </head>
+      <body className={`${baskerville.className} antialiased`}>
         {children}
       </body>
     </html>

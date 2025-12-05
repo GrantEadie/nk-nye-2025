@@ -8,8 +8,17 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Nye Nook",
-  description: "Nye Nook 2025",
+  title: "Maritime Moonlight | Nye Nook 2025",
+  description: "New Year's Eve at The Nook",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({

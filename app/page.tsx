@@ -12,7 +12,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative flex flex-col min-h-dvh px-4 sm:px-6">
+    <div className="relative">
       {videoError ? (
         <Image
           src="/maritime bg small.jpg"
@@ -44,22 +44,23 @@ export default function Home() {
       )}
       <div className="fixed inset-0 bg-black/70 -z-10"></div>
 
-      <div className="flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 grow relative z-10 pb-8 sm:pb-0">
+      {/* Hero Section - Full viewport height */}
+      <section className="flex flex-col items-center justify-center min-h-dvh gap-4 sm:gap-8 md:gap-10 relative z-10 px-4 sm:px-6 py-8 sm:py-0">
         <h1
           className={`text-white text-center font-[Calora] px-2 leading-[0.82] transition-all duration-1000 delay-300 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"
           }`}
         >
-          <div className="text-[80px] sm:text-[150px] md:text-[180px] lg:text-[210px]">
+          <div className="text-[60px] xs:text-[80px] sm:text-[150px] md:text-[180px] lg:text-[210px]">
             MARITIME
           </div>
-          <div className="text-[72px] sm:text-[135px] md:text-[162px] lg:text-[189px]">
+          <div className="text-[54px] xs:text-[72px] sm:text-[135px] md:text-[162px] lg:text-[189px]">
             MOONLIGHT
           </div>
         </h1>
 
         <h3
-          className={`text-center text-sm sm:text-xl md:text-3xl text-white transition-all duration-1000 delay-500 uppercase tracking-[1em] italic ${
+          className={`text-center text-xs sm:text-xl md:text-3xl text-white transition-all duration-1000 delay-500 uppercase tracking-[0.5em] sm:tracking-[1em] italic ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"
           }`}
         >
@@ -67,12 +68,12 @@ export default function Home() {
         </h3>
 
         <h3
-          className={`text-center font-bold text-l sm:text-xl md:text-2xl text-white flex items-center justify-center gap-2 transition-all duration-1000 delay-700 ${
+          className={`text-center font-bold text-base sm:text-xl md:text-2xl text-white flex items-center justify-center gap-2 transition-all duration-1000 delay-700 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"
           }`}
         >
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7"
+            className="w-4 h-4 sm:w-6 sm:h-6 md:w-7 md:h-7"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
@@ -81,20 +82,17 @@ export default function Home() {
           The Nook
         </h3>
 
-        <div
-          className={`flex flex-col gap-6 sm:gap-8 md:gap-10 w-full max-w-4xl mx-auto items-center transition-all duration-1000 delay-900 ${
-            isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
         <a
           href="https://www.pinterest.com/arielwright/ships-in-the-night/?invite_code=0c8cb49cf2da430a9f175c1653f13fcb&sender=298715525192618351s"
-          className="flex items-center gap-3 sm:gap-4 text-lg sm:text-xl md:text-2xl lg:text-3xl font-extralight text-white group active:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] border border-white rounded-full px-6 py-3 sm:px-8 sm:py-4 transition-all duration-500 hover:bg-white/20"
+          className={`flex items-center justify-center text-center gap-2 sm:gap-4 text-base sm:text-xl md:text-2xl lg:text-3xl font-extralight text-white group active:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] border border-white rounded-full px-4 py-2 sm:px-8 sm:py-4 transition-all duration-500 hover:bg-white/20 active:bg-white/20 ${
+            isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
         >
           <span className="wrap-break-word tracking-[-.12em] transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] group-active:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]">
             Costume Inspo / Moodboard
           </span>
           <svg
-            className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 shrink-0"
+            className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 shrink-0"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -104,8 +102,53 @@ export default function Home() {
             <polyline points="12,5 19,5 19,12" />
           </svg>
         </a>
+
+        <div
+          className={`absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-2000 animate-bounce ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <svg
+            className="w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="0.5"
+          >
+            <polyline points="6,9 12,15 18,9" />
+          </svg>
         </div>
-      </div>
+      </section>
+
+      {/* Getting There Section */}
+      <section className="flex flex-col items-center justify-center min-h-dvh gap-6 sm:gap-10 relative z-10 px-4 sm:px-6 py-12 sm:py-20">
+        <div className="flex flex-col gap-6 sm:gap-10 w-full max-w-4xl text-center text-white items-center">
+          <h4 className="font-[Calora] text-3xl sm:text-5xl md:text-7xl font-light">
+            PARKING MAP
+          </h4>
+
+          <div className="flex flex-col items-center gap-6 sm:gap-10 text-base sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] px-2">
+            <p className="font-medium italic">
+              <span className="text-red-500 underline">No parking </span>
+              <span className="underline">on the property</span>
+            </p>
+            <p className="max-w-full sm:w-max p-3 px-4 sm:p-4 sm:px-6">
+              Please park on the streets marked{" "}
+              <span className="text-green-500 italic">green</span> or at{" "}
+              <a target="_blank" className="underline" href="https://maps.app.goo.gl/793S5wGK5dnGYGf39">
+                Sunset Pond Park.
+              </a>
+            </p>
+          </div>
+          <Image
+            src="/nk parking map.png"
+            alt="Parking map"
+            width={800}
+            height={600}
+            className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
     </div>
   );
 }

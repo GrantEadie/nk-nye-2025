@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import ChatNotification from "./components/ChatNotification";
-import JulienNotification from "./components/JulienNotification";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -250,8 +249,36 @@ export default function Home() {
       </section>
 
       {/* Chat Notifications */}
-      <ChatNotification />
-      <JulienNotification />
+      <ChatNotification
+        avatar="A"
+        gradientFrom="from-black/50"
+        gradientTo="to-orange-500"
+        message={
+          <>
+            Hey, Ari here. Just a reminder that you{" "}
+            <span className="underline">
+              won&apos;t be let in if you dress up as a pirate.
+            </span>
+          </>
+        }
+        delay={5000}
+      />
+      <ChatNotification
+        avatar="J"
+        gradientFrom="from-black/50"
+        gradientTo="to-teal-500"
+        message={
+          <>
+            Yeah, Julien here, just emphasizing what Ari said, no pirates.{" "}
+            <span className="underline font-semibold">
+              Click here to see a moodboard of what not to wear.
+            </span>
+          </>
+        }
+        delay={10000}
+        bottomOffset="bottom-20 sm:bottom-28"
+        link="https://www.pinterest.com/search/pins/?q=pirate%20inspo&rs=typed"
+      />
     </div>
   );
 }

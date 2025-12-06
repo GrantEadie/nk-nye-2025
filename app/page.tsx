@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import ChatNotification from "./components/ChatNotification";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -248,6 +249,9 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* Chat Notification */}
+      <ChatNotification />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Maritime Moonlight | Nye Nook 2025",
+  title: "Moonlit Maritime | Nye Nook 2025",
   description: "New Year's Eve at The Nook",
   icons: {
     icon: [
@@ -20,16 +20,16 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Maritime Moonlight | Nook NYE 2025",
+    title: "Moonlit Maritime | Nook NYE 2025",
     description: "New Year's Eve at The Nook - Costumes highly encouraged",
     url: 'https://nye-nook-2025.vercel.app',
-    siteName: 'Maritime Moonlight | Nook NYE 2025',
+    siteName: 'Moonlit Maritime | Nook NYE 2025',
     images: [
       {
-        url: '/nk nye mm twitter cover.png',
-        width: 1200,
-        height: 630,
-        alt: 'Maritime Moonlight - New Year\'s Eve 2025',
+        url: '/nk nye mm social cover.png',
+        width: 630,
+        height: 889,
+        alt: 'Moonlit Maritime - New Year\'s Eve 2025',
       },
     ],
     locale: 'en_US',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Maritime Moonlight | Nye Nook 2025",
+    title: "Moonlit Maritime | Nye Nook 2025",
     description: "New Year's Eve at The Nook - Costumes highly encouraged",
     images: ['/nk nye mm twitter cover.png'],
   },

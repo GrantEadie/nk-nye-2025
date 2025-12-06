@@ -18,7 +18,7 @@ export default function Home() {
         <div className="fixed inset-0 -z-10">
           <Image
             src="/maritime bg small.jpg"
-            alt="Maritime background"
+            alt="Moonlit Maritime background"
             fill
             className="object-cover"
             priority
@@ -80,11 +80,9 @@ export default function Home() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"
           }`}
         >
-          <div className="text-[70px] xs:text-[100px] sm:text-[150px] md:text-[180px] lg:text-[210px]">
-            MARITIME
-          </div>
           <div className="text-[63px] xs:text-[90px] sm:text-[135px] md:text-[162px] lg:text-[189px]">
-            MOONLIGHT
+            MOONLIT
+            MARITIME
           </div>
         </h1>
 

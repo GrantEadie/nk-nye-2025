@@ -256,7 +256,7 @@ export default function Home() {
         message={
           <>
             Hey, Ari here. Just a reminder that you{" "}
-            <span className="underline">
+            <span className="font-bold">
               won&apos;t be let in if you dress up as a pirate.
             </span>
           </>
@@ -269,15 +269,15 @@ export default function Home() {
         gradientTo="to-teal-500"
         message={
           <>
-            Yeah, Julien here, just emphasizing what Ari said, no pirates.{" "}
-            <span className="underline font-semibold">
-              Click here to see a moodboard of what not to wear.
-            </span>
+            Yeah, Julien here, just emphasizing what Ari said, absolutely zero pirates.{" "}
+            <a target="_blank" href="https://www.pinterest.com/search/pins/?q=pirate%20inspo&rs=typed" className="underline">
+              Click here to see what not to wear.
+            </a>
           </>
         }
-        delay={10000}
+        delay={9000}
         bottomOffset="bottom-20 sm:bottom-28"
-        link="https://www.pinterest.com/search/pins/?q=pirate%20inspo&rs=typed"
+        
       />
     </div>
   );

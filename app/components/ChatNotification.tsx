@@ -44,7 +44,7 @@ export default function ChatNotification() {
       >
         {/* Message */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 shrink-0 aspect-square rounded-full bg-gradient-to-br  to-orange-500 flex items-center justify-center text-sm font-bold shadow-lg">
+          <div className="w-10 h-10 backdrop-blur-lg shrink-0 aspect-square rounded-full bg-gradient-to-br  to-orange-500 flex items-center justify-center text-sm font-bold shadow-lg">
             A
           </div>
           <div className="bg-white/10 backdrop-blur-lg rounded-lg p-3 text-sm leading-relaxed flex-1">

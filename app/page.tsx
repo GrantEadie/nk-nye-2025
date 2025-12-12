@@ -179,7 +179,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-4 sm:gap-8 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl tracking-[-.12em] w-full max-w-2xl">
             <div className="flex justify-between w-full border-b border-white/10 pb-3 sm:pb-4">
               <span className="font-medium">9-10:00 PM</span>
-              <span className="italic">TBD</span>
+              <span className="italic">Not Your Therapist</span>
             </div>
             <div className="flex justify-between w-full border-b border-white/10 pb-3 sm:pb-4">
               <span className="font-medium">10-11:00 PM</span>

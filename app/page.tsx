@@ -249,7 +249,7 @@ export default function Home() {
       </section>
 
       {/* Chat Notifications */}
-      <ChatNotification
+      {/* <ChatNotification
         avatar="A"
         gradientFrom="from-black/50"
         gradientTo="to-orange-500"
@@ -278,7 +278,7 @@ export default function Home() {
         delay={9000}
         bottomOffset="bottom-20 sm:bottom-28"
         
-      />
+      /> */}
     </div>
   );
 }
